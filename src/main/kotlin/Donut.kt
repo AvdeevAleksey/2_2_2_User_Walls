@@ -1,5 +1,3 @@
-package Post
-
 data class Donut(
     private val isDonut: Boolean = false,
     private val paidDuration: Int = 0,

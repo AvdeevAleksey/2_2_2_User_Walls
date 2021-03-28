@@ -1,5 +1,3 @@
-package Post
-
 data class Copyright(
     private val id: Int = 0,
     private val link: String = "",

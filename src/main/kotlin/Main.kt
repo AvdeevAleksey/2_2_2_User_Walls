@@ -1,15 +1,15 @@
-import Post.Post
-import Post.WallService
-
 fun main() {
 
-    WallService.add(Post())
-    println(WallService.getPostById(0))
-    val newPost = Post(id = 3, ownerId = 20, date = 2000, createdBy = 20)
-    println(newPost)
-    println(WallService.update(newPost))
+    var postService: WallService = WallService()
+
+    println(message = postService.add(Post()))
+    println(message = postService.add(Post()))
     println("=====================================================")
-    println(WallService.getPostById(0))
-//    WallService.update(newPost)
-//    println(WallService.getPostById(0))
+    val newPost = Post(id = 2, ownerId = 20, date = 2000, createdBy = 20)
+    println(newPost)
+    println(postService.update(newPost))
+    println("=====================================================")
+    println(postService.posts[postService.posts.lastIndex])
+    println(postService.posts.size)
+    postService.update(newPost)
 }

@@ -1,5 +1,3 @@
-package Post
-
 data class Post(
     val id: Int = 0,
     internal val ownerId: Int = 0,

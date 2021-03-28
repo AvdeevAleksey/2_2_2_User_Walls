@@ -1,3 +1,1 @@
-package Post
-
 class Placeholder()
